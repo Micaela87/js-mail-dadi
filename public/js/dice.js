@@ -8,9 +8,11 @@ const finalResult = document.querySelector('.result'); // div to display the win
 const buttonToReset = document.querySelector('.reset-game'); // button to reset the game
 
 const generateRandomNumber = () => {
+
     // generates and displays user random number
     const userNumber = Math.floor(Math.random() * 6) + 1;
     userResult.innerHTML += ` ${userNumber}`;
+
     // generates and displays computer random number
     const computerNumber = Math.floor(Math.random() * 6) + 1;
     computerResult.innerHTML += ` ${computerNumber}`;
@@ -30,6 +32,7 @@ const generateRandomNumber = () => {
     // hides buttonToPlay
     buttonToPlay.classList.add('inactive');
     buttonToReset.classList.remove('inactive');
+    
 }
 
 // resets all the paramaters
