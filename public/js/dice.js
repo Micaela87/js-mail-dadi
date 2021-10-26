@@ -23,12 +23,18 @@ const generateRandomNumber = () => {
     } else {
         finalResult.innerHTML = 'Same number! You both won!';
     }
+
+    // hides buttonToPlay
+    buttonToPlay.classList.add('inactive');
+    buttonToReset.classList.remove('inactive');
 }
 
 const resetGame = () => {
     userResult.innerHTML = 'Your number is';
     computerResult.innerHTML = 'Roby\'s number is';
     finalResult.style.display = 'none';
+    buttonToPlay.classList.remove('inactive');
+    buttonToReset.classList.add('inactive');
 }
 
 buttonToPlay.onclick = generateRandomNumber;
