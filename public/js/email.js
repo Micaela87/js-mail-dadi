@@ -16,3 +16,19 @@ for (let i = 0; i < mailList.length; i++) {
 }
 
 console.log(result);
+
+// variant without 'break'
+
+let inList = [];
+
+for (let i = 0; i < mailList.length; i++) {
+    if (mailList[i] === userInput) {
+        inList.push(userInput)
+    }
+}
+
+if (inList.length > 0) {
+    console.log('You\'re in the list');
+} else {
+    console.log('Sorry, you\'re not in the list');
+}
