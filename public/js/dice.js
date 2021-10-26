@@ -29,7 +29,6 @@ const resetGame = () => {
     userResult.innerHTML = 'Your number is';
     computerResult.innerHTML = 'Roby\'s number is';
     finalResult.style.display = 'none';
-    finalResult.innerHTML = '';
 }
 
 buttonToPlay.onclick = generateRandomNumber;
