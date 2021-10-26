@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    background-color: #1389b2;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+
+span {
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem 0;
+}
+
+button {
+    background-color: coral;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.user-number, .roby-number, .result {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.result {
+    display: none;
+}
+
+.reset-game {
+    font-size: 1.5rem;
+}
