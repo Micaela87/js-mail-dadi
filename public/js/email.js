@@ -17,7 +17,19 @@ for (let i = 0; i < mailList.length; i++) {
 
 console.log(result);
 
-// variant without 'break'
+// shortest version
+
+let isInList = 'Sorry, you\'re not in the list';
+
+for (let i = 0; i < mailList.length; i++) {
+    if (mailList[i] === userInput) {
+        isInList = 'You\'re in the list!';
+    }
+}
+
+console.log(isInList);
+
+// version without 'break'
 
 let inList = [];
 
